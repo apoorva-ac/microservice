@@ -1,0 +1,22 @@
+server:
+  port: 9002
+  error:
+    include-message=always:
+
+
+springfox:
+  documentation:
+    swaggerUi:
+      baseUrl: /users
+    openApi:
+      v3:
+        path: /users/v3/api-docs
+    swagger:
+      v2:
+        path: /users/v2/api-docs
+
+spring:
+  application:
+    name: USER-SERVICE
+  zipkin:
+    base-url: http://127.0.0.1:9411/
